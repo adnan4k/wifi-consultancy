@@ -73,7 +73,7 @@ export function Process() {
                       </div>
                     </div>
                   ) : (
-                    <div className="group relative bg-transparent rounded-lg p-6 transition-all duration-300 hover:bg-foreground hover:text-background cursor-pointer pr-20">
+                    <div className="group relative bg-transparent rounded-lg p-6 transition-all duration-300 hover:bg-primary hover:text-background cursor-pointer pr-20">
                       <div className="text-lg font-medium text-foreground group-hover:text-background group-hover:font-semibold transition-all duration-300 whitespace-nowrap">
                         {step.text}
                       </div>
