@@ -3,6 +3,7 @@
 import { Hero } from '@/components/hero';
 import { Services } from '@/components/services';
 import { Stats } from '@/components/stats';
+import { Process } from '@/components/process';
 import { Navbar } from '@/components/navbar';
 import { Footer } from '@/components/footer';
 
@@ -13,6 +14,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Stats />
+      <Process />
       <Footer />
     </div>
   );
