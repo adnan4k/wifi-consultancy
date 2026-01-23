@@ -8,11 +8,11 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'Stratify | Premium Business Consultancy',
+  title: 'WiFi Consultancy | Premium Business Consultancy',
   description: 'Transform your vision into strategy. We craft strategic solutions that drive measurable business growth and elevate your competitive advantage.',
   generator: 'v0.app',
   keywords: 'consultancy, business strategy, strategic planning, brand optimization, growth acceleration',
-  authors: [{ name: 'Stratify Consultancy' }],
+  authors: [{ name: 'WiFi Consultancy' }],
   icons: {
     icon: [
       {

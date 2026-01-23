@@ -10,7 +10,7 @@ export function Navbar() {
   return (
     <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <div className="text-2xl font-bold text-primary">Stratify</div>
+        <div className="text-2xl font-bold text-primary">WiFi</div>
         
         <div className="hidden md:flex gap-8">
           <a href="#services" className="text-sm hover:text-primary transition-colors">Services</a>

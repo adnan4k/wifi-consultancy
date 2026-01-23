@@ -115,7 +115,7 @@ export function Footer() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
               <p className="text-sm text-background/60">
-                © 2024 Stratify Consultancy. All rights reserved.
+                © 2024 WiFi Consultancy. All rights reserved.
               </p>
             </div>
 
