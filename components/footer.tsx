@@ -61,22 +61,22 @@ export function Footer() {
               <ul className="space-y-2 text-sm text-background/70">
                 <li>
                   <a href="#" className="hover:text-background transition-colors">
-                    Strategic Planning
+                    Network Infrastructure
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-background transition-colors">
-                    Brand Optimization
+                    Cybersecurity Solutions
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-background transition-colors">
-                    Growth Acceleration
+                    Cloud Integration
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-background transition-colors">
-                    Digital Transformation
+                    Business Connectivity
                   </a>
                 </li>
               </ul>

@@ -3,7 +3,7 @@
 import React from "react"
 
 import { useEffect, useRef, useState } from 'react';
-import { Zap, Target, Lightbulb, Rocket } from 'lucide-react';
+import { Shield, Network, Cloud, Activity } from 'lucide-react';
 
 interface ServiceCard {
   id: number;
@@ -15,27 +15,27 @@ interface ServiceCard {
 const services: ServiceCard[] = [
   {
     id: 1,
-    icon: <Lightbulb className="w-8 h-8" />,
-    title: 'Strategic Planning',
-    description: 'Develop comprehensive business strategies aligned with your long-term vision and market positioning.',
+    icon: <Network className="w-8 h-8" />,
+    title: 'Network Infrastructure',
+    description: 'Design and deployment of high-performance wired and wireless networks tailored to your business scale.',
   },
   {
     id: 2,
-    icon: <Target className="w-8 h-8" />,
-    title: 'Brand Optimization',
-    description: 'Elevate your brand presence with data-driven insights and innovative positioning strategies.',
+    icon: <Shield className="w-8 h-8" />,
+    title: 'Cybersecurity Solutions',
+    description: 'Advanced threat protection and security audits to safeguard your critical business data and assets.',
   },
   {
     id: 3,
-    icon: <Rocket className="w-8 h-8" />,
-    title: 'Growth Acceleration',
-    description: 'Unlock sustainable growth through operational excellence and market expansion initiatives.',
+    icon: <Cloud className="w-8 h-8" />,
+    title: 'Cloud Integration',
+    description: 'Seamless migration and management of cloud-based services for enhanced collaboration and scalability.',
   },
   {
     id: 4,
-    icon: <Zap className="w-8 h-8" />,
-    title: 'Digital Transformation',
-    description: 'Navigate the digital landscape with cutting-edge solutions and technology integration strategies.',
+    icon: <Activity className="w-8 h-8" />,
+    title: 'Managed Support',
+    description: 'Proactive 24/7 monitoring and technical support to ensure your business remains always connected.',
   },
 ];
 
@@ -48,11 +48,10 @@ function ServiceCardComponent({
 }) {
   return (
     <div
-      className={`group relative bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-8 transition-all duration-700 hover:bg-white/80 hover:shadow-2xl ${
-        isVisible
-          ? 'opacity-100 translate-y-0'
-          : 'opacity-0 translate-y-8'
-      }`}
+      className={`group relative bg-white/50 backdrop-blur-xl border border-white/30 rounded-2xl p-8 transition-all duration-700 hover:bg-white/80 hover:shadow-2xl ${isVisible
+        ? 'opacity-100 translate-y-0'
+        : 'opacity-0 translate-y-8'
+        }`}
     >
       {/* Glass morphism effect */}
       <div className="absolute inset-0 bg-gradient-to-br from-white/20 to-transparent rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />

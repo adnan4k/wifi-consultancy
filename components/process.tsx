@@ -14,22 +14,25 @@ interface ProcessStep {
 const processSteps: ProcessStep[] = [
   {
     id: 1,
-    text: 'Understand your goals, values & uniqueness',
+    text: 'Discovery & Audit',
+    description: 'We analyze your current infrastructure and business needs to identify bottlenecks and opportunities.',
   },
   {
     id: 2,
-    text: 'Craft your positioning and messaging',
+    text: 'Strategic Planning',
+    description: 'Our consultants design a custom roadmap focused on security, scalability, and performance.',
   },
   {
     id: 3,
-    text: 'Develop',
+    text: 'Implementation',
     highlighted: true,
     description:
-      'We help you create authentic content, optimize your social and professional profiles, and establish a powerful online presence that reflects your values, voice, and vision—consistently.',
+      'Our skilled engineering team deploys the solution with minimal disruption, following global best practices and standards.',
   },
   {
     id: 4,
-    text: 'Launch your authentic personal brand',
+    text: 'Monitoring & Support',
+    description: 'Continuous optimization and proactive monitoring to ensure your network evolves with your business.',
   },
 ];
 
@@ -46,8 +49,8 @@ export function Process() {
             {/* Title */}
             <div>
               <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
-                <span className="text-primary">Our Process,</span>{' '}
-                <span className="text-foreground">Simplified</span>
+                <span className="text-primary">Our Strategic,</span>{' '}
+                <span className="text-foreground">Workflow</span>
               </h2>
             </div>
 
@@ -105,18 +108,10 @@ export function Process() {
           <div className="relative">
             <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-xl">
               {/* Placeholder image - replace with actual image */}
-              <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                <div className="text-center space-y-2">
-                  <div className="text-foreground/40 text-sm">Image Placeholder</div>
-                  <div className="text-foreground/30 text-xs">
-                    Add your team/process image here
-                  </div>
-                </div>
-              </div>
-              {/* Uncomment and use when you have an image */}
+
               <Image
-                src="/meeting-background.jpg"
-                alt="Our Process"
+                src="/consultancy-process.png"
+                alt="Consultancy Process"
                 fill
                 className="object-cover"
               />

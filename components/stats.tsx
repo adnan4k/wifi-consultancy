@@ -12,8 +12,8 @@ interface StatItem {
 const stats: StatItem[] = [
   { id: 1, label: 'Projects Completed', target: 250, suffix: '+' },
   { id: 2, label: 'Client Satisfaction', target: 98, suffix: '%' },
-  { id: 3, label: 'Industry Leaders', target: 150, suffix: '+' },
-  { id: 4, label: 'Years of Excellence', target: 12 },
+  { id: 3, label: 'Fortune 500 Clients', target: 15, suffix: '+' },
+  { id: 4, label: 'Years of Experience', target: 12 },
 ];
 
 function CountupNumber({
@@ -98,10 +98,10 @@ export function Stats() {
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">
           <h2 className="text-5xl md:text-6xl font-serif font-light text-foreground">
-            Proven Impact
+            Our Strategic Impact
           </h2>
           <p className="text-lg text-foreground/60">
-            Delivering measurable results for our clients
+            Delivering measurable results through expert infrastructure consultancy
           </p>
         </div>
 
