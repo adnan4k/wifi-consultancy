@@ -48,7 +48,7 @@ export function Process() {
           <div className="space-y-8">
             {/* Title */}
             <div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light">
                 <span className="text-primary">Our Strategic,</span>{' '}
                 <span className="text-foreground">Workflow</span>
               </h2>

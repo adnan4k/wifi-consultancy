@@ -8,10 +8,11 @@ export function Footer() {
   return (
     <footer
       id="contact"
-      className="relative bg-foreground text-background py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative bg-foreground text-background py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       {/* Decorative background */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-primary/20 rounded-full blur-3xl" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 mb-12">

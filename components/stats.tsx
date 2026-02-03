@@ -92,8 +92,8 @@ export function Stats() {
       className="relative py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5"
     >
       {/* Decorative elements */}
-      <div className="absolute top-1/2 left-0 w-96 h-96 bg-accent/10 rounded-full blur-3xl -translate-y-1/2" />
-      <div className="absolute top-1/2 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl -translate-y-1/2" />
+      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
 
       <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16 space-y-4">

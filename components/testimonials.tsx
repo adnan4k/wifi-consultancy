@@ -53,8 +53,8 @@ export function Testimonials() {
 
     return (
         <section id="testimonials" className="py-24 px-4 sm:px-6 lg:px-8 bg-secondary/30 relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -mr-48 -mt-48" />
-            <div className="absolute bottom-0 left-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl -ml-48 -mb-48" />
+            <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
 
             <div className="max-w-7xl mx-auto relative z-10">
                 <div className="text-center mb-16">
@@ -71,7 +71,7 @@ export function Testimonials() {
                             className={`absolute inset-0 transition-all duration-1000 ease-in-out transform ${index === currentIndex ? 'opacity-100 translate-x-0 scale-100' : 'opacity-0 translate-x-12 scale-95 pointer-events-none'
                                 }`}
                         >
-                            <Card className="bg-white/50 backdrop-blur-md border-white/20 shadow-xl rounded-3xl overflow-hidden h-full">
+                            <Card className="bg-white/50 backdrop-blur-md border-white/20 shadow-xl rounded-2xl overflow-hidden h-full">
                                 <CardContent className="p-8 md:p-12 flex flex-col md:flex-row gap-8 items-center h-full">
                                     <div className="flex-shrink-0 relative">
                                         <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-primary/10 overflow-hidden relative border-2 border-white/50 shadow-sm">
