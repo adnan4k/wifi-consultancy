@@ -1,5 +1,3 @@
-'use client';
-
 import { Hero } from '@/components/hero';
 import { Services } from '@/components/services';
 import { Industries } from '@/components/industries';

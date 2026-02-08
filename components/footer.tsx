@@ -1,146 +1,72 @@
 'use client';
 
 import { Mail, Linkedin, Twitter } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
 
 export function Footer() {
   return (
-    <footer
-      id="contact"
-      className="relative bg-foreground text-background py-24 px-4 sm:px-6 lg:px-8 overflow-hidden"
-    >
-      {/* Decorative background */}
-      <div className="absolute top-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-accent/5 rounded-full blur-3xl translate-x-1/2 translate-y-1/2" />
-
-      <div className="relative z-10 max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-2 gap-12 mb-12">
-          {/* Contact Form */}
-          <div className="space-y-6">
-            <div>
-              <h3 className="text-3xl md:text-4xl font-serif font-light mb-2">
-                Let's Connect
-              </h3>
-              <p className="text-background/70">
-                Ready to transform your business? Get in touch with our team today.
-              </p>
+    <footer className="bg-slate-900 text-slate-300 py-16 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          {/* Brand and Description */}
+          <div className="md:col-span-2 space-y-6">
+            <div className="text-2xl font-bold text-white italic tracking-tight">
+              WiFi Consultancy
             </div>
-
-            <form className="space-y-4">
-              <div>
-                <Input
-                  type="text"
-                  placeholder="Your Name"
-                  className="bg-background/10 border-background/20 text-background placeholder:text-background/50"
-                />
-              </div>
-              <div>
-                <Input
-                  type="email"
-                  placeholder="your@email.com"
-                  className="bg-background/10 border-background/20 text-background placeholder:text-background/50"
-                />
-              </div>
-              <div>
-                <textarea
-                  placeholder="Tell us about your project"
-                  rows={4}
-                  className="w-full bg-background/10 border border-background/20 rounded-lg px-4 py-2 text-background placeholder:text-background/50 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                />
-              </div>
-              <Button className="w-full bg-background text-foreground hover:bg-background/90 font-semibold">
-                Send Message
-              </Button>
-            </form>
-          </div>
-
-          {/* Quick Links & Contact */}
-          <div className="grid sm:grid-cols-2 gap-8">
-            <div className="space-y-4">
-              <h4 className="font-semibold text-lg">Services</h4>
-              <ul className="space-y-2 text-sm text-background/70">
-                <li>
-                  <a href="#" className="hover:text-background transition-colors">
-                    Network Infrastructure
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-background transition-colors">
-                    Cybersecurity Solutions
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-background transition-colors">
-                    Cloud Integration
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-background transition-colors">
-                    Business Connectivity
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div className="space-y-4">
-              <h4 className="font-semibold text-lg">Company</h4>
-              <ul className="space-y-2 text-sm text-background/70">
-                <li>
-                  <a href="#" className="hover:text-background transition-colors">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-background transition-colors">
-                    Case Studies
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-background transition-colors">
-                    Team
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="hover:text-background transition-colors">
-                    Blog
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        {/* Divider */}
-        <div className="border-t border-background/20 pt-8">
-          <div className="grid md:grid-cols-2 gap-8 items-center">
-            <div>
-              <p className="text-sm text-background/60">
-                © 2024 WiFi Consultancy. All rights reserved.
-              </p>
-            </div>
-
-            {/* Social Links */}
-            <div className="flex justify-end gap-4">
+            <p className="text-slate-400 max-w-sm leading-relaxed">
+              Empowering businesses through cutting-edge network infrastructure, cybersecurity, and cloud solutions. Your partner in digital transformation.
+            </p>
+            <div className="flex gap-4">
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-primary/20 hover:text-primary flex items-center justify-center transition-all duration-300"
               >
                 <Mail size={18} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-primary/20 hover:text-primary flex items-center justify-center transition-all duration-300"
               >
                 <Linkedin size={18} />
               </a>
               <a
                 href="#"
-                className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
+                className="w-10 h-10 rounded-full bg-slate-800 hover:bg-primary/20 hover:text-primary flex items-center justify-center transition-all duration-300"
               >
                 <Twitter size={18} />
               </a>
             </div>
+          </div>
+
+          {/* Quick Links */}
+          <div className="space-y-4">
+            <h4 className="font-bold text-white text-lg">Services</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="#" className="hover:text-primary transition-colors">Network Infrastructure</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Cybersecurity Solutions</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Cloud Integration</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Business Connectivity</a></li>
+            </ul>
+          </div>
+
+          <div className="space-y-4">
+            <h4 className="font-bold text-white text-lg">Company</h4>
+            <ul className="space-y-3 text-sm">
+              <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Case Studies</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Team</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Divider and Copyright */}
+        <div className="border-t border-slate-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-sm text-slate-500">
+            © 2026 WiFi Consultancy. All rights reserved.
+          </p>
+          <div className="flex gap-8 text-xs text-slate-500">
+            <a href="#" className="hover:text-slate-300 transition-colors">Terms of Service</a>
+            <a href="#" className="hover:text-slate-300 transition-colors">Cookie Policy</a>
           </div>
         </div>
       </div>

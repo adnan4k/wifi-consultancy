@@ -45,8 +45,10 @@ export function Hero() {
   const [scrollY, setScrollY] = useState(0);
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -208,6 +210,7 @@ export function Hero() {
             <Button
               size="lg"
               className="bg-primary hover:bg-primary/90 text-white font-semibold group text-sm px-6 py-4"
+              onClick={() => window.location.href = '/contact'}
             >
               {currentSlideData.buttonText}
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
@@ -217,6 +220,14 @@ export function Hero() {
               size="lg"
               variant="outline"
               className="border-white text-white hover:bg-white/10 font-semibold text-sm px-6 py-4 bg-transparent"
+              onClick={() => {
+                const servicesSection = document.getElementById('services');
+                if (servicesSection) {
+                  servicesSection.scrollIntoView({ behavior: 'smooth' });
+                } else {
+                  window.location.href = '/#services';
+                }
+              }}
             >
               Explore Services
             </Button>
